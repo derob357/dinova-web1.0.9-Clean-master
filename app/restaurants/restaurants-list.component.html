@@ -1,0 +1,70 @@
+<h1>Search Results Component</h1>
+<search [pageType]="'restautantList'"></search>
+<div class="filer-result" *ngIf="restaurants">
+    <div *ngFor="let restaurant of restaurants">
+
+        <div class="restaurantDiv">
+     <figure>
+                                                        <img class="img img-responsive" [src]="restaurant.logoUrl" alt="image" onError="this.src='./assets/images/defualt-img.png'">
+                                                    </figure>
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">{{restaurant.name}}</li>
+                                                        <li class="list-group-item">{{restaurant.address}}</li>
+                                                        <li class="list-group-item">{{restaurant.city}}, {{restaurant.state}}</li>
+                                                        <li class="list-group-item"><i class="fa fa-phone"></i> {{restaurant.phone}}</li>
+                                                    </ul>
+        </div>
+
+        <!--<div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <figure>
+                                                        <img class="img img-responsive" [src]="restaurant.logoUrl" alt="image" onError="this.src='./assets/images/defualt-img.png'">
+                                                    </figure>
+
+                                                                    <div class="row">
+                                                                        <div class="col-xs-12 social-btns">
+
+                                                                            <div class="col-xs-3 col-md-1 col-lg-1 social-btn-holder">
+                                                                                <a href="#" class="btn btn-social btn-block btn-facebook">
+                                                                                    <i class="fa fa-facebook"></i> </a>
+                                                                            </div>
+
+                                                                            <div class="col-xs-3 col-md-1 col-lg-1 social-btn-holder">
+                                                                                <a href="#" class="btn btn-social btn-block btn-twitter">
+                                                                                    <i class="fa fa-twitter"></i> </a>
+                                                                            </div>
+
+                                                                            <div class="col-xs-3 col-md-1 col-lg-1 social-btn-holder">
+                                                                                <a href="#" class="btn btn-social btn-block btn-pinterest">
+                                                                                    <i class="fa fa-pinterest"></i> </a>
+                                                                            </div>
+
+
+                                                                        </div>
+                                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-8">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">{{restaurant.name}}</li>
+                                                        <li class="list-group-item">{{restaurant.address}}</li>
+                                                        <li class="list-group-item">{{restaurant.city}}, {{restaurant.state}}</li>
+                                                        <li class="list-group-item"><i class="fa fa-phone"></i> {{restaurant.phone}}</li>
+                                                    </ul>
+                                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>-->
+
+    </div>

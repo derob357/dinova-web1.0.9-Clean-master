@@ -1,0 +1,55 @@
+<h1>Welcome Page Component</h1>
+<search [pageType]="'restautantList'"></search>
+<div class="filer-result" *ngIf="restaurants">
+    <div class="row" *ngFor="let restaurant of restaurants">
+        <div class="col-md-12">
+            <div class="thumbnail">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div  class="hover-img image-zoom">
+                            <img [src]="restaurant.logoUrl" alt="image" onError="this.src='./assets/images/defualt-img.png'" >
+                            <div class="hover-caption color-w">
+                                <ul>
+                                    <li>
+                                        <a href={{restaurant.facebookUrl}}><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li><a href={{restaurant.twitterUrl}}><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                                    <li><a href={{restaurant.pinterestUrl}}><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="caption">
+                            <h2>{{restaurant.name}}</h2>
+                            <p class="price">Price: {{restaurant.price}} $</p>
+                            <p class="address">{{restaurant.address}}</p>
+                            <ul>
+                                <li>
+                                    <label>City</label>
+                                    <p>{{restaurant.city}}</p>
+                                </li>
+                                <li>
+                                    <label>State</label>
+                                    <p>{{restaurant.state}}</p>
+                                </li>
+                                <li>
+                                    <label>Zipcode</label>
+                                    <p>{{restaurant.zipCode}}</p>
+                                </li>
+                                <li>
+                                    <label>Phone</label>
+                                    <p>{{restaurant.phone}}</p>
+                                </li>
+                                <li>
+                                    <label>Primary Cuisine</label>
+                                    <p>{{restaurant.primaryCuisine}}</p>
+                                </li>
+                            </ul>									
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

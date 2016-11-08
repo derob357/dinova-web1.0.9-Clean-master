@@ -1,0 +1,83 @@
+.metroTileContainer {
+    padding-left: 30px;
+}
+
+
+/**********************************
+  Responsive Tiles CSS
+***********************************/
+
+.frontpage_square {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    background: rgba(0, 0, 0, .4);
+    /* #3c3c3c; */
+    margin: 15px 15px 20px 0;
+    background-size: cover;
+    padding: 120px 20px;
+    max-width: 350px;
+    max-height: 120px;
+}
+
+div.card-img-overlay {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+    margin: 0px -20px 0px -20px;
+    padding: 1px 0 10px 0px;
+    color: white;
+    text-align: center;
+}
+
+.frontpage_square.half {
+    /*padding-bottom: calc(50% - 15px);*/
+    position: relative;
+    overflow: hidden;
+    margin: 15px 15px 20px 0;
+    background-size: cover;
+    max-width: 730px;
+    max-height: 120px;
+}
+
+.frontpage_square.double {
+    padding-bottom: calc(200% + 30px);
+}
+
+.frontpage_square img {
+    position: absolute;
+}
+
+#tile1,
+#tile2,
+#tile3,
+#tile4,
+#tile6,
+#tile7,
+#tile8 {
+    background-size: cover;
+    padding: 120px 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    max-width: 350px;
+    margin-top: 20px;
+    max-height: 120px;
+    margin-bottom: 20px;
+}
+
+#tile5 {
+    background-size: cover;
+    padding: 120px 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+    max-width: 715px;
+    max-height: 120px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #999
+}
+
+
+/**
+  End Responsive Tiles CSS
+**/

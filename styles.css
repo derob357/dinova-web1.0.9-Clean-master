@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,600,700|PT+Serif|Source+Sans+Pro');
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.main-content {
+    float: left;
+    padding: 25px 0 0 0;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.search-tabs .tab-content {
+    padding: 15px 0;
+}
+
+.search-tabs .dropdown-toggle {
+    border-radius: 0;
+}
+
+.filer-result {
+    margin-top: 15px;
+}
+
+.filer-result .thumbnail {
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    background-color: #fefefe;
+}
+
+.filer-result .hover-img {
+    background: #333;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    max-height: 250px;
+}
+
+.filer-result .thumbnail img {
+    width: 100%;
+}
+
+.filer-result .hover-img .hover-caption {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    z-index: 999;
+}
+
+.filer-result .hover-img:hover .hover-caption {
+    opacity: 1;
+    line-height: 100%;
+    top: 45%;
+    text-align: center;
+}
+
+.filer-result .hover-img:hover img {
+    opacity: 0.7;
+}
+
+.filer-result .hover-img:hover .hover-caption ul li {
+    display: inline-block;
+}
+
+.filer-result .hover-img:hover .hover-caption ul li a i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.filer-result .hover-img:hover .hover-caption ul li a:hover i {
+    color: #da451b;
+}
+
+.filer-result .thumbnail .caption {
+    padding: 9px;
+    color: #333;
+}
+
+.filer-result .thumbnail .caption ul {
+    display: block;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+.filer-result .thumbnail .caption ul li {
+    display: inline-block;
+    width: 19.5%;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.filer-result .thumbnail .caption ul li p {
+    margin-bottom: 0;
+    color: #ccc;
+}
+
+.filer-result .thumbnail .caption ul li:last-child {
+    border-right: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h4 {
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+.filer-result .thumbnail .caption .price {
+    color: #da451b;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+}
+
+input.search {
+    width: 50% !important;
+}
+
+.btn-dw {
+    background: #51AC31
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: none;
+}
+
+.navbar {
+    border: 0 solid transparent;
+}
+
+
+/**********************************
+BS Carousel
+***********************************/
+
+
+/*#####################
+Additional Styles (required)
+######################*/
+
+
+/* carousel */
+
+.carousel-inner {
+    width: 97%
+}
+
+.carousel-inner .active.left {
+    left: -20%;
+}
+
+.carousel-inner .next {
+    left: 25%;
+}
+
+.carousel-inner .prev {
+    left: -20%;
+}
+
+.carousel-control {
+    width: 4%;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    margin: 0 -10px 0 -10px;
+    background-image: none;
+}
+
+
+/* End carousel */
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #fff;
+    border: none;
+}
+
+.restaurantDiv {
+    width: 350px;
+    /* or whatever width you want. */
+    max-width: 350px;
+    /* or whatever width you want. */
+}
