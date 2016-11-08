@@ -197,3 +197,24 @@ Additional Styles (required)
     max-width: 350px;
     /* or whatever width you want. */
 }
+
+a.nav-link {
+    color: #fff;
+}
+
+a.nav-link:hover {
+    color: #333;
+}
+
+.searchContainer {
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .25);
+    max-width: 1600px;
+    padding: 25px 0 35px 0;
+}
+
+figure {
+    margin: 0;
+    max-width: 125px;
+}

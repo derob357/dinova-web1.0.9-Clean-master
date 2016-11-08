@@ -1,21 +1,38 @@
-<h1>Search Results Component</h1>
-<search [pageType]="'restautantList'"></search>
-<div class="filer-result" *ngIf="restaurants">
+<div class="divImage container-fluid" [ngStyle]="{'background-image': 'url(' + heroImage + ')'}">
+    <div class="row searchContainer">
+        <div class="col-md-12 col-sm-12 ">
+            <div class="col-md-9 col-md-offset-1">
+                <search [pageType]="'restaurants'"></search>
+            </div>
+            <!--<div class="col-md-2">
+            </div>-->
+        </div>
+    </div>
+</div>
+
+
+<!--<div class="row searchContainer">
+    <h1>Search Results Component</h1>
+
+    <search [pageType]="'restautantList'"></search>
+</div>-->
+<div class="filer-result col-md-4" *ngIf="restaurants">
     <div *ngFor="let restaurant of restaurants">
 
         <div class="restaurantDiv">
-     <figure>
-                                                        <img class="img img-responsive" [src]="restaurant.logoUrl" alt="image" onError="this.src='./assets/images/defualt-img.png'">
-                                                    </figure>
-                                                    <ul class="list-group">
-                                                        <li class="list-group-item">{{restaurant.name}}</li>
-                                                        <li class="list-group-item">{{restaurant.address}}</li>
-                                                        <li class="list-group-item">{{restaurant.city}}, {{restaurant.state}}</li>
-                                                        <li class="list-group-item"><i class="fa fa-phone"></i> {{restaurant.phone}}</li>
-                                                    </ul>
+            <!--<figure>-->
+            <img class="img img-responsive" style="max-width:125px" [src]="restaurant.logoUrl" alt="image" onError="this.src='./assets/images/defualt-img.png'">
+            <!--</figure>-->
+            <ul class="list-group">
+                <li class="list-group-item">{{restaurant.name}}</li>
+                <li class="list-group-item">{{restaurant.address}}</li>
+                <li class="list-group-item">{{restaurant.city}}, {{restaurant.state}}</li>
+                <li class="list-group-item"><i class="fa fa-phone"></i> {{restaurant.phone}}</li>
+            </ul>
         </div>
-
-        <!--<div class="row">
+    </div>
+</div>
+<!--<div class="row">
             <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -66,5 +83,3 @@
 
             </div>
         </div>-->
-
-    </div>
