@@ -1,0 +1,39 @@
+url_root="https://www.mydinova.com/static/dinova-default-cuisine-images/"
+
+default = url_root + "defaultstyle.jpg"
+
+choices = ["american", "asian", "bakery", "bar/pub/tavern", "bbq", "brazilian", "breakfast", "burger", "casual dining", "catering", "chinese ", "cuban/latin", "default", "dessert", "fine dining", "french", "greek/mediterranean", "group/private dining", "indian", "italian", "mexican", "pizza", "pizza parlor", "pub/tavern", "sandwich", "seafood", "small plates/tapas", "southern", "steakhouse", "sushi", "theme"]
+
+images = {"american": [str(url_root) + "american1.jpg", str(url_root) + "american2.jpg"],
+          "asian": [str(url_root) + "asian1.jpg", str(url_root) + "asian2.jpg"],
+          "bakery": [str(url_root) + "bakery1.jpg", str(url_root) + "bakery2.png"],
+          "bar/pub/tavern": [str(url_root) + "barpubtavern1.jpg", str(url_root) + "barpubtavern2.jpg"],
+          "bbq": [str(url_root) + "bbq1.png", str(url_root) + "bbq2.png"],
+          "brazilian": [str(url_root) + "brazilian1.png", str(url_root) + "brazilian2.png"],
+          "breakfast": [str(url_root) + "breakfast1.jpg", str(url_root) + "breakfast2.jpg"],
+          "catering": [str(url_root) + "catering1.png", str(url_root) + "catering2.png"],
+          "casual dining": [str(url_root) + "casualdining1.jpg", str(url_root) + "barpubtavern1.jpg"],
+          "cuban/latin": [str(url_root) + "cubanlatin1.png", str(url_root) + "cubanlatin2.png"],
+          "chinese": [str(url_root) + "chinese1.png", str(url_root) + "chinese2.png"],
+          "dessert": [str(url_root) + "desserts1.jpg", str(url_root) + "desserts2.png"],
+          "burger": [str(url_root) + "fastfood1.jpg", str(url_root) + "fastfood2.jpg"],
+          "fine dining": [str(url_root) + "finedining1.jpg", str(url_root) + "finedining2.jpg"],
+          "french": [str(url_root) + "french1.jpg", str(url_root) + "french2.png"],
+          "greek/mediterranean": [str(url_root) + "greek1.png", str(url_root) + "greek2.png"],
+          "group/private dining": [str(url_root) + "groupprivatedining1.jpg", str(url_root) + "groupprivatedining2.jpg"],
+          "indian": [str(url_root) + "indian1.png", str(url_root) + "indian2.png"],
+          "italian": [str(url_root) + "italian1.jpg", str(url_root) + "italian2.jpg"],
+          "japanese": [str(url_root) + "japanese1.jpg", str(url_root) + "japanese2.png"],
+          "mexican": [str(url_root) + "mexican1.jpg", str(url_root) + "mexican2.png"],
+          "pizza": [str(url_root) + "pizza1.jpg", str(url_root) + "pizza2.jpg"],
+          "pizza parlor": [str(url_root) + "pizzaparlor1.jpg", str(url_root) + "pizzaparlor2.jpg"],
+          "pub/tavern": [str(url_root) + "pubtavern1.jpg", str(url_root) + "pubtavern2.jpg"],
+          "sandwich": [str(url_root) + "sandwich1.jpg", str(url_root) + "sandwich2.jpg"],
+          "seafood": [str(url_root) + "seafood1.jpg", str(url_root) + "seafood2.jpg"],
+          "southern": [str(url_root) + "southern1.png", str(url_root) + "southern2.png"],
+          "steakhouse": [str(url_root) + "steakhouse1.jpg", str(url_root) + "steakhouse2.jpg"],
+          "sushi": [str(url_root) + "sushi1.jpg", str(url_root) + "sushi2.png"],
+          "small plates/tapas": [str(url_root) + "tapas1.png", str(url_root) + "tapas2.png"],
+          "theme": [str(url_root) + "theme1.png", str(url_root) + "theme2.png"],
+          "default": [str(url_root) + "defaultstyle1.jpg", str(url_root) + "defaultstyle2.png"]
+          }
