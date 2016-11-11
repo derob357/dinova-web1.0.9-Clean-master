@@ -1,13 +1,3 @@
-// import { Component } from '@angular/core'
-
-// @Component({
-//     selector: 'metro',
-//     templateUrl: './app/metro/metro.component.html',
-//     styleUrls:['./app/metro/metro.component.css']
-// })
-// export class MetroComponent{
-
-// }
 import { Component, Input, OnInit } from '@angular/core';
 
 import { GoogleplaceDirective } from '../global/googleplace.directive';
