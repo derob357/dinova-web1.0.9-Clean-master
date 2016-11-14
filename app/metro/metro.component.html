@@ -1,100 +1,60 @@
-<!-- Begin Metro Area Tiles -->
 <div class="container metroTileContainer">
     <div class="row">
 
-        <div class="col-sm-4">
-            <!--<a [href]="['/restaurants']" (click)="search($event,'30,26.1219444,-80.1436111')">-->
-                <div class="frontpage_square" [ngStyle]="{'background-image': 'url(' + tileImage002 + ')'}" (click)="search()">
-                                    <!--<div class="frontpage_square" [ngStyle]="{'background-image': 'url(' + tileImage002 + ')'}" (click)="search($event,'30,26.1219444,-80.1436111')">-->
+        <ul id="metrotiles">
+            <li *ngFor="let metroArea of metroAreas; let i =index">
 
-                    <div class="card-img-overlay" [ngStyle]="{'background': 'rgba(0,0,0,.4)'}">
+                <div *ngIf="i<9">
 
 
-                        <h2 class="card-title">New York</h2>
-                        <p class="card-text">2,257 restaurants</p>
-                    </div>
-                </div>
-            <!--</a>-->
-        </div>
-
-        <div class="col-sm-4">
-            <a [href]="['/restaurants']">
-                <div class="frontpage_square" [ngStyle]="{'background-image': 'url(' + tileImage003 + ')'}" (click)="buttonClickChi($event,'30,26.1219444,-80.1436111')">
-                    <div class="card-img-overlay" [ngStyle]="{'background': 'rgba(0,0,0,.4)'}">
-                        <h2 class="card-title">Chicago</h2>
-                        <p class="card-text">3,459 restaurants</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm-4">
-            <a [href]="['/restaurants']">
-                <div class="frontpage_square" [ngStyle]="{'background-image': 'url(' + tileImage004 + ')'}" (click)="buttonClickAtl($event,'30,26.1219444,-80.1436111')">
-                    <div class="card-img-overlay" [ngStyle]="{'background': 'rgba(0,0,0,.4)'}">
-                        <h2 class="card-title">Atlanta</h2>
-                        <p class="card-text">4,125 restaurants</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-4">
-            <a [href]="['/restaurants']">
-                <div class="frontpage_square" [ngStyle]="{'background-image': 'url(' + tileImage005 + ')'}" (click)="buttonClickSfr($event,'30,26.1219444,-80.1436111')">
-                    <div class="card-img-overlay" [ngStyle]="{'background': 'rgba(0,0,0,.4)'}">
-                        <h2 class="card-title">San Francisco</h2>
-                        <p class="card-text">3,857 restaurants</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm-8">
-            <a [href]="['/restaurants']">
-                <div class="frontpage_square half" [ngStyle]="{'background-image': 'url(' + tileImage001 + ')'}" (click)="buttonClickWas($event,'30,26.1219444,-80.1436111')">
-                    <div class="card-img-overlay" [ngStyle]="{'background': 'rgba(0,0,0,.4)'}">
-                        <h2 class="card-title">Washington DC</h2>
-                        <p class="card-text">1,459 restaurants</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-    </div>
+                    <div *ngIf="i<4">
+                        <div class="col-sm-4">
+                            <!--<a [href]="['/restaurant']">-->
+                            <div class="frontpage_square" [ngStyle]="{'background-image': 'url('  + tileImageUrl + metroArea.imageUrl  + tileImageSm + ')'}" (click)="buttonClickNyc($event,'30,26.1219444,-80.1436111')">
+                                <div class="card-img-overlay" [ngStyle]="{'background': 'rgba(0,0,0,.4)'}">
 
 
-    <div class="row">
-        <div class="col-sm-4">
-            <a [href]="['/restaurants']">
-                <div class="frontpage_square" [ngStyle]="{'background-image': 'url(' + tileImage006 + ')'}" (click)="buttonClickBst($event,'30,26.1219444,-80.1436111')">
-                    <div class="card-img-overlay" [ngStyle]="{'background': 'rgba(0,0,0,.4)'}">
-                        <h2 class="card-title">Boston</h2>
-                        <p class="card-text">1,770 restaurants</p>
+                                    <h2 class="card-title">{{metroArea.name}}</h2>
+                                    <p class="card-text">{{metroArea.count}} restaurants</p>
+                                </div>
+                            </div>
+                            <!--</a>-->
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm-4">
-            <a [href]="['/restaurants']">
-                <div class="frontpage_square" [ngStyle]="{'background-image': 'url(' + tileImage007 + ')'}" (click)="buttonClickDal($event,'30,26.1219444,-80.1436111')">
-                    <div class="card-img-overlay" [ngStyle]="{'background': 'rgba(0,0,0,.4)'}">
-                        <h2 class="card-title">Dallas</h2>
-                        <p class="card-text">1,989 restaurants</p>
+
+                    <div *ngIf="i<5">
+                        <div *ngIf="i>3">
+                            <div class="col-sm-8">
+                                <div class="frontpage_square half" [ngStyle]="{'background-image': 'url('  + tileImageUrl + metroArea.imageUrl  + tileImageLg + ')'}" (click)="buttonClickWas($event,'30,26.1219444,-80.1436111')">
+                                    <div class="card-img-overlay" [ngStyle]="{'background': 'rgba(0,0,0,.4)'}">
+                                        <h2 class="card-title">{{metroArea.name}}</h2>
+                                        <p class="card-text">{{metroArea.count}} restaurants</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm-4">
-            <a [href]="['/restaurants']">
-                <div class="frontpage_square" [ngStyle]="{'background-image': 'url(' + tileImage008 + ')'}" (click)="buttonClickLax($event,'30,26.1219444,-80.1436111')">
-                    <div class="card-img-overlay" [ngStyle]="{'background': 'rgba(0,0,0,.4)'}">
-                        <h2 class="card-title">Los Angeles</h2>
-                        <p class="card-text">3,125 restaurants</p>
+                    <div *ngIf="i>5">
+                        <div class="col-sm-4">
+                            <!--<a [href]="['/restaurant']">-->
+                            <div class="frontpage_square" [ngStyle]="{'background-image': 'url('  + tileImageUrl + metroArea.imageUrl  + tileImageSm + ')'}" (click)="buttonClickNyc($event,'30,26.1219444,-80.1436111')">
+                                <div class="card-img-overlay" [ngStyle]="{'background': 'rgba(0,0,0,.4)'}">
+
+
+                                    <h2 class="card-title">{{metroArea.name}}</h2>
+                                    <p class="card-text">{{metroArea.count}} restaurants</p>
+                                </div>
+                            </div>
+                            <!--</a>-->
+                        </div>
                     </div>
+
                 </div>
-            </a>
-        </div>
+
+
+            </li>
+        </ul>
     </div>
 </div>
-<!-- End Metro Area Tiles -->

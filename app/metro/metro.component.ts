@@ -27,19 +27,35 @@ export class MetroComponent implements OnInit {
     public searchFlag = 0;
     private loading: boolean;
     constructor() { }
+    
     sorting(json_object: Array<any>, key_to_sort_by: any) {
+
         function sortByKey(a: any, b: any) {
             var x = a[key_to_sort_by];
             var y = b[key_to_sort_by];
             return ((x < y) ? -1 : ((x > y) ? 1 : 0));
         }
-        json_object.sort(sortByKey);
+         var a = json_object.sort(sortByKey).pop();
+         console.log('a: ',a)
+        json_object.sort(sortByKey).reverse().splice(4,0,a);
+        console.log('2. json_obj: ',json_object)
     }
     ngOnInit(): void {
+
+         console.log('1. object evt: %O', this.metroAreas);
         this.loading = false;
-       var metroAreaTiles = this.sorting(this.metroAreas, 'count')
-       console.log(this.metroAreas.reverse())
-    //    console.log("metroAreasTiles : "+this.metroAreasTiles[0])
+           
+       var metroAreaTiles = this.sorting(this.metroAreas, 'count');
+        //       var a = this.metroAreas.reverse().shift();
+     //   console.log('a: ' ,a);
+//this.metroAreas.shift[0].splice(3,0,this.metroAreas);
+ //console.log('metroAreas evt 1: %O', this.metroAreas.splice(4,0,a).reverse());
+ //console.log('metroAreasTiles evt: %O', metroAreaTiles);
+
+//console.log('object evt 2: %O' , this.metroAreas.reverse().splice(3,0));
+
+     //  console.log(this.metroAreas.reverse());
+console.log("3. metroAreasTiles :  %0", this.metroAreas)
      
     } 
 tileImageUrl = 'app/assets/images/marketimages/';

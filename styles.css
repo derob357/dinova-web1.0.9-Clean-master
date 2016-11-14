@@ -70,7 +70,7 @@ body {
 }
 
 .filer-result .hover-img:hover .hover-caption ul li a:hover i {
-    color: #da451b;
+    color: #51AC31;
 }
 
 .filer-result .thumbnail .caption {
@@ -117,7 +117,7 @@ h4 {
 }
 
 .filer-result .thumbnail .caption .price {
-    color: #da451b;
+    color: #51AC31;
     font-size: 20px;
     margin-bottom: 5px;
 }
@@ -193,9 +193,7 @@ Additional Styles (required)
 
 .restaurantDiv {
     width: 350px;
-    /* or whatever width you want. */
     max-width: 350px;
-    /* or whatever width you want. */
 }
 
 a.nav-link {
@@ -212,9 +210,131 @@ a.nav-link:hover {
     background-color: rgba(0, 0, 0, .25);
     max-width: 1600px;
     padding: 25px 0 35px 0;
+    margin-right: -20px;
+    margin-left: -20px;
 }
 
 figure {
     margin: 0;
-    max-width: 125px;
+    max-width: 150px;
+}
+
+.dw-main-content {
+    float: left;
+    padding: 25px 0 0 0;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.dw-list-content {
+    float: left;
+    padding: 25px 0 0 0;
+    width: 100%;
+    max-width: 1600px;
+}
+
+
+/******************
+/* infinite Scroll
+/******************/
+
+.search-results {
+    height: 100%;
+    /*// overflow: scroll;*/
+}
+
+.ScrollTitle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    width: 100%;
+}
+
+
+/**************/
+
+.mycontainer {
+    position: relative;
+}
+
+.left {
+    width: 25em;
+    position: absolute;
+    top: 500;
+    left: 0;
+}
+
+.right {
+    margin-left: 600px;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.columnsContainer,
+footer,
+header {
+    position: relative;
+    margin: .5em;
+}
+
+.rightColumn,
+.leftColumn,
+footer,
+header {
+    border: 1px solid #ccc;
+    padding: 1.25em;
+}
+
+.leftColumn {
+    margin-bottom: .5em;
+}
+
+.inline-items {
+    margin-top: 0;
+}
+
+.inline-items li {
+    margin-left: 0;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inline-items li:first-child {
+    margin-left: 0;
+    border: none;
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.inline-items li:last-child {
+    padding-right: 0;
+}
+
+@media screen and (min-width: 47.5em) {
+    .rightColumn {
+        margin-left: 35.325em;
+    }
+    .leftColumn {
+        position: absolute;
+        top: 0;
+        left: .5em;
+        width: 34.375em;
+    }
+}
+
+.card-text {
+    color: #fff!important;
 }
